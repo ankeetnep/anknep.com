@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo img {
+    border-radius: 30px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.burger {
+    display: none;
+}
+
+.backvid {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.line {
+    height: 4px;
+    width: 33px;
+    background-color: white;
+    margin: 8px 0px;
+}
+
+.navlinks li a {
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-size: 2em;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.navlinks li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+}
+
+.navlinks li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+nav {
+    height: 100vh;
+}
+
+.section {
+    position: relative;
+    top: 120px;
+    height: 200px;
+}
+
+.welcome {
+    color: blue;
+}
+
+.welcome2 {
+    color: blue;
+}
+
+.section2 {
+    height: 43vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: gold;
+}
+
+.box .content {
+    z-index: 5;
+}
+
+.content h2 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content p {
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 23px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 18px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.box::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -125px;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(45deg, red, yellow);
+    transform: translateX(-100%) skew(40deg);
+    transition: transform 0.5s linear;
+}
+
+.box:hover::before {
+    transform: translateX(-1%) skew(40deg);
+}
+
+.para {
+    top: 10vh;
+    position: relative;
+    height: 55vh;
+}
+
+.para p {
+    font-weight: 500;
+}
+
+.foots {
+    display: flex;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 0 23px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot {
+    display: flex;
+    background-color: black;
+}
+
+.foots ul {
+    color: white;
+}
+
+.foots ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.foots ul li a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.copy h4 {
+    text-align: center;
+    color: white;
+    background: black;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 500;
+}
+
+.design {
+    position: relative;
+    top: 30rem;
+    font-size: 130px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.pricings {
+    position: relative;
+    top: 100px;
+    height: 300px;
+}
+
+.pricings h2 {
+    text-align: center;
+    color: aqua;
+}
+
+.payments {
+    display: flex;
+}
+
+.payment {
+    display: flex;
+    background-color: gold;
+    height: 50vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.payment1 {
+    height: 350px;
+    width: 350px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 23px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 18px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.welcome3 {
+    color: #00b8ff;
+}
+
+
+.section3 {
+    position: relative;
+    top: 10vh;
+    height: 60vh;
+}
+
+.section3 p {
+    text-align: center;
+}
+
+.payment h2 {
+    color: rgb(45, 192, 138);
+    font-weight: 900;
+}
+
+.payment h3 {
+    color: white;
+}
+
+.payment ul li {
+    color: white;
+    padding: 8px 0;
+}
+
+.btn {
+    border-radius: 20px;
+    background-color: #5e9aff;
+}
+
+.btn a {
+    padding: 20px 28px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: black;
+}
+
+.main {
+    position: relative;
+    top: 25vh;
+    height: 300px;
+    width: 100vw;
+    background: url(contct.jpg);
+}
+
+.mb-3 input {
+    width: 400px;
+    background: none;
+    color: white;
+}
+
+.mb {
+    color: white;
+}
+
+.mainname {
+    color: white;
+    font-weight: bold;
+}
+
+.contact {
+    position: relative;
+    top: 16vh;
+    height: 40px;
+}
+
+.contact h3 {
+    color: #09adad;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contactdown {
+    position: relative;
+    top: 28vh;
+    height: 80vh;
+}
+
+.contactdown p {
+    text-align: center;
+}
+
+.follow {
+    height: 40vh;
+}
+
+.follow h1 {
+    text-align: center;
+}
+
+.img ul {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width: 200px;
+}
+
+.section4 {
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+    display: grid;
+    background-color: rgb(243, 238, 232);
+}
+
+.btn4 {
+    float: left;
+    height: 70px;
+    width: 100vw;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn4 span {
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.btn4 .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+}
+
+.btn4 .icon i {
+    font-size: 25px;
+    line-height: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon a {
+    color: black;
+}
+
+.btn4:hover i {
+    color: white;
+}
+
+.btn4:hover {
+    width: 250px;
+}
+
+.btn4:nth-child(1):hover .icon {
+    background: #ff0000;
+}
+
+.btn4:nth-child(2):hover .icon {
+    background: #05ff6daf;
+}
+
+.btn4:nth-child(3):hover .icon {
+    background: #030303;
+}
+
+.btn4:nth-child(4):hover .icon {
+    background: aqua;
+}
+
+.btn4:nth-child(1) {
+    color: black
+}
+
+.btn4:nth-child(2) {
+    color: red;
+}
+
+.btn4:nth-child(3) {
+    color: aqua;
+}
+
+.btn4:nth-child(4) {
+    color: green;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+
+@media screen and (max-width:964px) {
+    .section2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:578px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .section3 {
+        height: 90vh;
+    }
+
+    .mb-3 input {
+        width: 200px;
+    }
+
+}
+
+
+@media screen and (max-width:1020px) {
+    .navlinks {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1099px) {
+    .payment {
+        width: 100%;
+        height: auto;
+    }
+
+    .payments {
+        flex-direction: column;
+    }
+
+    .payment1 {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:942px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navlinks {
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        height: 75vh;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+    .navlinks li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* .design {
+        position: relative;
+        top: 30rem;
+        font-size: 50px;
+    } */
+
+}
+
+@media screen and (max-width:962px) {
+    .design {
+        position: relative;
+        top: 30rem;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:628px) {
+    .design {
+        position: relative;
+        top: 39rem;
+        font-size: 43px;
+    }
+
+}
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
